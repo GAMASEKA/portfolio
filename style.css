@@ -1,0 +1,426 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  body {
+    min-width: 1200px;
+    font-family: 'Muller', sans-serif;
+    background-color: #e5e5e5;
+  }
+  
+  /* glob */
+  
+  :root {
+    --color-idle: #CC9933;
+    --color-focus: #F0BF5F;
+    --color-active: #A47312;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .img {
+    margin: 0;
+  }
+  
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+
+  .container .box {
+    position: relative;
+    margin-bottom: 20px; 
+  }
+
+  .container .box:last-child {
+    margin-bottom: 0;
+  }
+
+  .container .box .label {
+    position: relative;
+    padding: 20px;
+    background-color: darkblue;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .container .box .label::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .container .box.active .label::after {
+    content: "\2014";
+  }
+
+  .container .box .content {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
+
+  }
+
+  .container .box .content p {
+    padding: 20px;
+  }
+
+  /* header */
+
+  .header-list {
+    display: flex;
+    list-style: none;
+  }
+
+  .header-item {
+     position: relative;
+     margin-right: 50px;
+  }
+
+  .header-item:last-child {
+    margin-right: 0;
+  }
+
+  .header-item::after {
+    position: absolute;
+    content: '';
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+  }
+
+
+
+
+  .header-fio {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .header-fio:hover::after {
+    position: absolute;
+    display: block;
+    content:'ФИО: Усманов Марсель Алишерович';
+    background-color: white;
+    top: 70px;
+    min-width: max-content;
+    min-height:  10px;
+    z-index: 100;
+  }
+
+  .header-tg {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .header-tg:hover::after {
+    position: absolute;
+    content:'Telegram: @bababuy73';
+    background-color: white;
+    top: 70px;
+    min-width: max-content;
+    min-height:  10px;
+    z-index: 100;
+  }
+
+  .header-habr {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .header-habr:hover::after {
+    position: absolute;
+    content:'Habr: Пока нету';
+    background-color: white;
+    top: 70px;
+    min-width: max-content;
+    min-height:  10px;
+    z-index: 100;
+  }
+
+
+  .header-city {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .header-city:hover::after {
+    position: absolute;
+    content:'Город проживания: Ульяновск';
+    background-color: white;
+    top: 70px;
+    min-width: max-content;
+    min-height:  10px;
+    z-index: 100;
+  }
+
+  .header-email {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .header-email:hover::after {
+    position: absolute;
+    content:'Email: 12020673@mail.ru';
+    background-color: white;
+    top: 70px;
+    min-width: max-content;
+    min-height:  10px;
+    z-index: 100;
+  }
+
+  .header-bd {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .header-bd:hover::after {
+    position: absolute;
+    content:'Дата рождения: 12.02.2006';
+    background-color: white;
+    top: 70px;
+    min-width: max-content;
+    min-height:  10px;
+    z-index: 100;
+  }
+
+  .header-git {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .header-git:hover::after {
+    position: absolute;
+    content:'Git: https://github.com/GAMASEKA';
+    background-color: white;
+    top: 70px;
+    min-width: max-content;
+    min-height:  10px;
+    z-index: 100;
+  }
+
+
+  .fio::after {
+    background-image: url(svg/iconfinder-3-avatar-2754579_120516.svg);
+  }
+
+  .email::after {
+    background-image: url(svg/mail_ru_logo_icon_147267.svg);
+  }
+
+  .tg::after {
+    background-image: url(svg/telegram_icon_130816.svg);
+  }
+
+  .bd::after {
+    background-image: url(svg/voting_day_icon_154119.svg);
+  }
+
+  .habr::after {
+    background-image: url(svg/habr_logo_icon_145210.svg);
+  }
+
+  .city::after {
+    background-image: url(svg/1495574559-map-location-solid-style-01_84581.svg);
+  }
+
+  .git::after {
+    background-image: url(svg/file_type_git_icon_130581.svg);
+  }
+
+  .header-descr {
+    display: none;
+  }
+
+  /* about me */
+
+  .about-me__skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .skills-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container .box .content .skills-descr {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* swiper */
+
+  .swiper {
+    width: 1170px;
+    height: 720px;
+  }
+
+  .swiper-block {
+    padding-left: 30px;
+    padding-top: 67px;
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: box-shadow .5s ease-in-out;
+  }
+
+  .glow-on-hover {
+    margin-top: 500px;
+  }
+
+  .swiper-list {
+    max-width: 300px;
+    min-height: auto;
+  }
+
+
+  .swiper-form {
+    text-align: center;
+    margin-bottom: auto;
+  }
+
+ 
+  .swiper-block1 {
+    background-image: url(img/sit-down.jpg);
+  }
+  
+
+  .swiper-block2 {
+    background-image: url(/img/loire.jpg);
+  }
+
+  .swiper-block3 {
+    background-image: url(/img/technozavr.jpg);
+  }
+
+  .swiper-descr {
+    text-shadow: 0 0 2px rgba(0,0,0,0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+  .swiper-block:hover {
+    box-shadow: inset 1000px 0px 1000px rgba(0,0,0,0.5);
+  }
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.swiper {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}

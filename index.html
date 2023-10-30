@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/> 
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My-Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Frontend-developer portfolio</h1>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item fio"><div class="header-fio header-icon"><p class="header-descr" >Марсель Усманов Алишерович</p></div></li>
+                    <li class="header-item tg"><div class="header-tg header-icon"><p class="header-descr">@bababuy73</p></div></li>
+                    <li class="header-item city"><div class="header-city header-icon"><p class="header-descr">Ульяновск</p></div></li>
+                    <li class="header-item bd"><div class="header-bd header-icon"><p class="header-descr">12.02.2006</p></div></li>
+                    <li class="header-item git"><div class="header-git header-icon" data-descr="https://github.com/GAMASEKA"><p class="header-descr"><a href="https://github.com/GAMASEKA">Перейти</a></p></div></li>
+                    <li class="header-item habr"><div class="header-habr header-icon"><p class="header-descr">Пока нету</p></div></li>
+                    <li class="header-item email"><div class="header-email header-icon"><p class="header-descr">12020673@mail.ru</p></div></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <section class="about-me">
+        <div class="container">
+            <div class="box">
+                <div class="label">Навыки</div>
+                <div class="content about-me-content">
+                    <div class="about-me__skills">
+                        <div class="skills-web">
+                            <h3 class="skills-title">Веб-верстка:</h3>
+                            <ul class="skills-list">
+                                <li class="skills-item"><p class="skills-descr">Адаптивная, кроссбраузерная, семантическая верстка</p></li>
+                                <li class="skills-item"><p class="skills-descr">Pixel Perfect верстка</p></li>
+                                <li class="skills-item"><p class="skills-descr">Работа с макетами в Photoshop, Figma</p></li>
+                                <li class="skills-item"><p class="skills-descr">Владение Flexbox</p></li>
+                                <li class="skills-item"><p class="skills-descr">CSS-анимации (transition, keyframes)</p></li>
+                                <li class="skills-item"><p class="skills-descr">Обеспечение доступности элементов страницы</p></li>
+                                <li class="skills-item"><p class="skills-descr">Применение Bootstrap-сеток</p></li>
+                            </ul>
+                        </div>
+                        <div class="skills-front">
+                            <h3 class="skills-title">Frontend:</h3>
+                            <ul class="skills-list">
+                                <li class="skills-item"><p class="skills-descr">JavaScript ES6+ (в т. ч. классы, промисы, модули)</p></li>
+                                <li class="skills-item"><p class="skills-descr">Работа со сторонними API</p></li>
+                                <li class="skills-item"><p class="skills-descr">React+Redux</p></li>
+                                <li class="skills-item"><p class="skills-descr">Настройка сборки в Webpack</p></li>
+                                <li class="skills-item"><p class="skills-descr">Работа с системами контроля версий (Git)</p></li>
+                                <li class="skills-item"><p class="skills-descr">jQuery</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="label">Опыт работы</div>
+                <div class="content">
+                    <p>
+                        На данный момент отсутствует.
+                </div>
+                </p>
+            </div>
+            <div class="box">
+                <div class="label">Образование</div>
+                <div class="content">
+                    <p>
+                        Среднее общее (9 классов).
+                </div>
+                </p>
+            </div>
+            <div class="box">
+                <div class="label">Курсы и тренинги</div>
+                <div class="content">
+                    <p>
+                        SKILLBOX
+                        Профессия Frontend-разработчик, 2022-2023
+                </div>
+                </p>
+            </div>
+            <div class="box">
+                <div class="label">Обо мне</div>
+                <div class="content">
+                    <p>
+                        Мой опыт в верстке сайтов более полугода. Меня заинтересовала Frontend разработка, потому что есть возможность экспериментировать, создавать красивые сайты, создавать понятные интерфейсы.
+                        Качественно выполняю поставленные задачи, не боюсь новых и сложных задач.
+                        Мои цели на ближайшее время - освоить популярные на текущий момент фреймворки (React, Vue, Angular)                        
+                </div>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+         <div class="swiper-block swiper-block1">
+            <div class="blur"></div>
+            <div class="swiper-descr swiper-descr1">
+            <h3 class="swiper-title">Онлайн маркетплейс по продаже мебели: SitDownPls</h3>
+                <form class="swiper-form" action="https://gamaseka.github.io/promejutochnaya_wev_adv/">
+                    <button class="glow-on-hover" type="submit">Перейти</button>
+                  </form>
+                </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-block swiper-block2">
+            <div class="swiper-descr swiper-descr2">
+            <h3 class="swiper-title">Онлайн маркетплейс по продаже белья: Moire</h3>
+
+            <form class="swiper-form" action="https://gamaseka.github.io/diplom/">
+                <button class="glow-on-hover" type="submit">Перейти</button>
+              </form>
+            </div>  
+    </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-block swiper-block3">
+            <div class="swiper-descr swiper-descr3">
+            <h3 class="swiper-title">Онлайн маркетплейс по продаже техники: Тезхнозавррр</h3>
+        
+            <form class="swiper-form" action="https://gamaseka.github.io/vue-app/">
+                <button class="glow-on-hover" type="submit">Перейти</button>
+              </form>
+            </div>
+    </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
